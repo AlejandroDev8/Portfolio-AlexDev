@@ -1,7 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex gap-x-4 flex-row pb-10">
+        Hey, soy Alejandro <a
+          href="https://www.linkedin.com/in/alejandrodev8/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        Desarrollador Web Front-end y Back-end. De San Luis Potoasí, México.
+      </h2>
+    </section>
+  </main>
 </Layout>
